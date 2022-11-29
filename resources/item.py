@@ -9,7 +9,6 @@ ERROR_INSERTING = "An error occurred while inserting the item."
 ITEM_NOT_FOUND = "Item not found."
 ITEM_DELETED = "Item deleted."
 
-
 class Item(Resource):
     parser = reqparse.RequestParser()
     parser.add_argument(

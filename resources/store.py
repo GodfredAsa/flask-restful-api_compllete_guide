@@ -3,8 +3,8 @@ from models.store import StoreModel
 
 NAME_ALREADY_EXISTS = "A store with name '{}' already exists."
 ERROR_INSERTING = "An error occurred while inserting the store."
-STORE_NOT_FOUND = "Store not found."
-STORE_DELETED = "Store deleted."
+STORE_NOT_FOUND = "Store not found"
+STORE_DELETED = "Store deleted"
 
 
 class Store(Resource):
@@ -36,7 +36,6 @@ class Store(Resource):
             return {"message": STORE_DELETED}, 200
 
         return {"message": STORE_NOT_FOUND}, 404
-
 
 class StoreList(Resource):
     @classmethod
